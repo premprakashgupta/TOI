@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.image{
+    width: 160px;
+    height: 110px;
+    float: left;
+}
+img{
+    margin-right: 10px;
+    height: 100%;
+}
+.container-fluid{
+    min-height: 100vh;
+    /* margin: 0 !important; */
+    padding: 0 !important;
+}
+.first_row{
+    background-color: #1A1A1A;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+}
+.language span{
+    font-size: 12px;
+    margin: 0 10px;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+.language span:nth-child(2){
+    border-right: 2px solid #fff;
+    border-left: 2px solid #fff;
+}
+.eng{
+    position: relative;
+}
+.eng ul{
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #FFFFFF;
+    display: none;
+    z-index: 99;
+}
+.eng ul li{
+    padding: 6px 9px;
+    border-bottom: 1px grey solid;
+    list-style: none;
+    color: #333;
+}
+.eng ul li:hover{
+    background-color: #E6EEF9;
+}
+.eng ul li:last-child{
+   
+    border-bottom: none;
+}
+.eng:hover > .eng_ul{
+    display: block;
+}
+.signin_and_social button{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: white;
+    margin: 0 20px;
+}
+.socialLinks i{
+    padding: 5px 3px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: #333;
+    font-size: 12px;
+}
+.brandName{
+    background-color: #000000;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+.brandName h1{
+    font-size: 4rem;
+    padding: 10px 0;
+    font-family: 'Playfair Display', serif;
+}
+.fa-bars{
+    color: #fff;
+    padding: 7px;
+    position: absolute;
+    bottom: 1%;
+    right: 10%;
+    display: none;
+    border: 2px solid #fff;
+}
+.navbarC{
+    width: 100%;
+    display: flex;
+    background-color: #BE2819;
+    position: relative;
+    padding: 0;
+    top: 0;
+}
+.navbarC nav li{
+    list-style: none;
+    margin: 0 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px;
+}
+.navbarC nav li:hover{
+    background-color: #f1f1f1;
+    color: #333;
+}
+.navLinkActive{
+    background-color: #f1f1f1;
+    color: #333 !important;
+}
+.fa-search{
+    cursor: pointer;
+}
+.home{
+    position: relative;
+}
+
+.home_ul{
+    width: 500px;
+    height: auto;
+    padding: 10px 10px 10px 0px;
+    background-color: #fff;
+    box-shadow: 2px 4px 8px #ccc;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    
+}
+.home:hover >.home_ul{
+    display: flex;
+}
+.home_ul .left{
+    flex: 2;
+    /* background-color: yellow; */
+    margin-right: 10px;
+}
+.home_ul .left li{
+    color: #000;
+    width: 30%;
+    transition: 1s all ease;
+    margin-top: 4px;
+}
+.home_ul .left li:hover{
+    background-color: red;
+    width: 90%;
+}
+.home_ul .right{
+    flex: 4;
+}
+
+.search_section{
+    width: 70%;
+    height: 200px;
+    background-color: rgba(51, 51, 51, 0.459);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    display: none;
+    transition: 1s all ease;
+}
+.search_section input{
+    flex: 3;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+}
+.search_section button{
+    flex: 1;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #BE2819;
+    color: #fff;
+    font-weight: 600;
+}
+.fa-times{
+    position: absolute;
+    right: 10px;
+    top: 10%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+main{
+    width: 1180px;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: #f1f1f1; */
+    padding: 10px;
+}
+main p{
+    font-size: 12px;
+}
+main h3{
+    font-weight: bold;
+}
+main hr{
+    height: 2px;
+    background-color: #333;
+}
+.main_posts{
+    flex: 3;
+    /* background-color: red; */
+    height: 200px;
+}
+
+.sub_posts{
+    flex: 2;
+    /* background-color: green; */
+    height: 200px;
+    margin-left: 10px;
+}
+.main_posts nav,.sub_posts nav{
+    background-color: #DDDDDD;
+}
+.main_posts nav li{
+    list-style: none;
+    margin: 0 10px;
+    text-transform: uppercase;
+    padding: 4px 6px;
+    cursor: pointer;
+}
+.main_posts nav li:hover{
+    background-color: #AAAAAA;
+    border-top: 5px solid #000000;
+    font-weight: bold;
+   
+}
+.main_postsActive{
+    background-color: #AAAAAA;
+    border-top: 5px solid #000000;
+    font-weight: bold;
+}
+.main_posts ul{
+    margin-top: 40px;
+}
+.main_posts ul li{
+    list-style: none;
+    border-bottom: 1px solid #DDDDDD;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.sub_posts nav{
+    border-bottom: 4px solid #333;
+    
+}
+.sub_posts nav li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+.sub_posts nav li:hover{
+   background-color: #333;
+    
+}
+.sub_posts ul li{
+    list-style: none;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 4px 3px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.seeAllMostSharedNew{
+    position: relative;
+}
+.seeAllMostSharedNew span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seeAllMostSharedNew hr{
+    height: 2px !important;
+}
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+}
+@media(max-width:770px){
+    main{
+        width: 100%;
+    }
+    .navbarC{
+        display: none;
+    }
+    .navbarC nav{
+        flex-direction: column;
+    }
+    .main_posts nav li{
+        font-size: 10px;
+    }
+    .sub_posts{
+        display: none;
+    }
+    .search_section{
+        flex-direction: column;
+    }
+    .search_section input{
+        flex: none;
+    }
+    .search_section{
+        width: auto;
+        height: auto;
+        margin-top: 10px;
+    }
+    .brandName h1{
+        font-size: 2rem;
+        
+    }
+    .fa-bars{
+        display: block;
+    }
+    .fa-search{
+        text-align: center;
+    }
+    .home_ul{
+        width: 100%;
+    }
+    .tiny_header{
+        flex-direction: column;
+    }
+}
